@@ -81,8 +81,8 @@ let modify_marks_page = () => {
 
         //Theorey Subjects
         if ((sub_type.includes("Theory") && tot_weightage_percent == 75 )) {
-            if (tot_cat_fat >= 44) {
-                pass_marks = 44;
+            if (tot_cat_fat >= 66) {
+                pass_marks = 66;
                 table.innerHTML += `
                 <tr class="tableContent-level1" style='background: rgb(170, 255, 0,0.6);'>
                     <td colspan="10" style="text-align:center">You secured in CAT+FAT : ${tot_cat_fat}</td>
@@ -94,8 +94,8 @@ let modify_marks_page = () => {
                 `;
             }
             else {
-                pass_marks = 45 - tot_cat_fat ;
-                max_pass_marks =  max_marks_cat_fat  -45 ;
+                pass_marks = 67 - tot_cat_fat ;
+                max_pass_marks =  max_marks_cat_fat  -67 ;
                 table.innerHTML += `
                 <tr class="tableContent-level1" style='background: rgb(255,0,0,0.6);'>
                     <td colspan="10" style="text-align:center"><b>Minimum marks required to clear this component is : ${pass_marks.toFixed(2)} and max marks are  ${max_pass_marks}<b></td>
@@ -105,8 +105,8 @@ let modify_marks_page = () => {
         }
         // Theory Only Subjects
         if (sub_type.includes("Only")) {
-            if (tot_cat_fat >= 44) {
-                pass_marks = 44;
+            if (tot_cat_fat >= 66) {
+                pass_marks = 66;
                 table.innerHTML += `
                 <tr class="tableContent-level1" style='background: rgb(170, 255, 0,0.6);'>
                     <td colspan="10" style="text-align:center">You secured in CAT+FAT : ${tot_cat_fat}</td>
@@ -118,8 +118,8 @@ let modify_marks_page = () => {
                 `;
             }
             else {
-                pass_marks = 45 - tot_cat_fat ;
-                max_pass_marks =  max_marks_cat_fat  -45 ;
+                pass_marks = 67 - tot_cat_fat ;
+                max_pass_marks =  max_marks_cat_fat  -67 ;
                 table.innerHTML += `
                 <tr class="tableContent-level1" style='background: rgb(255,0,0,0.6);'>
                     <td colspan="10" style="text-align:center"><b>Minimum marks required to clear this component is : ${pass_marks.toFixed(2)} and max marks are  ${max_pass_marks}<b></td>
